@@ -23,8 +23,8 @@ try:
 			# Skip first two lines: start=3, stop=None
 			for line in itertools.islice(rf, 3, None):  
 				split_line = line.split()
-				wf.write(split_line[1] + ",")
-				wf.write(split_line[2] + ",")
+				wf.write(split_line[1] + ",\n")
+				wf.write(split_line[2] + ",\n")
 		
 		print("All done! Output located at " + write_file + "\n")
 
